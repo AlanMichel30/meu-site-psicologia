@@ -148,16 +148,7 @@ html {
     box-shadow: 20px 20px 0px #f0f8ff; 
 }
 
-/* Ajuste para celulares */
-@media (max-width: 768px) {
-    .sobre-conteudo {
-        flex-direction: column;
-        text-align: center;
-    }
-    .linha-decorativa {
-        margin: 0 auto 25px auto;
-    }
-}
+
 
 .terapia-section {
     padding: 80px 20px;
@@ -282,12 +273,6 @@ html {
     font-style: italic;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    .sessoes-grid {
-        gap: 40px;
-    }
-}
 
 .contato-section {
     padding: 100px 20px;
@@ -370,4 +355,48 @@ html {
     color: black;
     font-size: 14px;
     border-top: 1px solid #eee;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+    .linha-decorativa {
+        margin: 0 auto 25px auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .sessoes-grid {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        padding: 10px;
+        /* Se quiser que os links fiquem um embaixo do outro no celular: */
+        /* flex-direction: column; */ 
+    }
+
+    .main-nav a {
+        padding: 8px 10px;
+        font-size: 14px; /* Diminui um pouco a letra no celular */
+    }
+    
+    /* Ajuste para a Hero (imagem e texto) não ficarem ruins no celular */
+    .hero-section {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-imagem {
+        width: 100%; /* A imagem ocupa a largura toda no celular */
+        height: 300px;
+        margin: 0 0 20px 0;
+    }
 }
